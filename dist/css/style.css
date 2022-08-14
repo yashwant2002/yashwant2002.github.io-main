@@ -1,0 +1,83 @@
+body{
+  background-color: black;
+  color: #fff;
+}
+li{
+    float: left;
+    padding-left: 35px;
+    list-style-type: none; 
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  color: black;
+  background-color: yellow;
+}
+pre{
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding: .6em 0 1em;
+  font-size: 76px;
+}
+small::selection{
+  color: yellow;
+  background-color: black;
+}
+h1:active{
+  color: yellow;
+  background-color: black;
+}
+*{
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: yellow;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:yellow;
+}
+p {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+a{
+  font-weight: 100;
+}
